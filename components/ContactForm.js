@@ -7,10 +7,10 @@ export default function ContactForm() {
     action="/success"
     method="POST"
     className="flex-col"
-    netlify
+    netlify="true"
    >
     <input type="hidden" name="contact" value="contact" />
-    <p className="py-2">
+    <div className="py-2">
      <label htmlFor="yourname">
       Name:
       <input
@@ -21,8 +21,8 @@ export default function ContactForm() {
       />
      </label>{' '}
      <br />
-    </p>
-    <p className="py-2">
+    </div>
+    <div className="py-2">
      <label htmlFor="youremail">
       Email:
       <input
@@ -33,8 +33,8 @@ export default function ContactForm() {
       />
      </label>{' '}
      <br />
-    </p>
-    <p className="py-2">
+    </div>
+    <div className="py-2">
      <label htmlFor="yourmessage">
       Message:
       <textarea
@@ -44,12 +44,12 @@ export default function ContactForm() {
       ></textarea>
      </label>{' '}
      <br />
-    </p>
-    <p className="mr-auto">
+    </div>
+    <div className="mr-auto">
      <button type="submit" className="border p-3 mt-3">
       Send Message
      </button>
-    </p>
+    </div>
    </form>
   </div>
  )

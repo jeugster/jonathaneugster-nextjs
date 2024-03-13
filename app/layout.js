@@ -5,10 +5,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "",
-  description: "",
-};
+export const metadata = {};
 
 export default function RootLayout({ children }) {
   return (
@@ -17,7 +14,7 @@ export default function RootLayout({ children }) {
         <main className="flex-auto w-full h-full">
             <div className="overlay backdrop-blur"></div>
             <Nav />
-            <div className="">{children}</div>
+            <div className={"flex items-center justify-center"}>{children}</div>
             <Footer />
           </main>
         </body>
