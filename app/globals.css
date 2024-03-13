@@ -131,11 +131,12 @@
  }
 
  /* Contact Success Page */
- .contact-success {
+ .success {
   padding: 1rem;
  }
 
- .contact-success-div {
+ /*Hero*/
+ .hero {
   margin: 10rem auto;
   display: flex;
   justify-content: center;
