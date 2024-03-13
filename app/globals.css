@@ -1,0 +1,145 @@
+/* TailwindCSS Imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TailwindCSS Base Styles */
+@layer base {
+ html {
+  color: rgb(245, 245, 245);
+ }
+ h1 {
+  @apply text-3xl;
+ }
+ h2 {
+  @apply text-2xl;
+ }
+ a {
+  @apply underline;
+ }
+ a:hover {
+  @apply opacity-75;
+ }
+
+ /* Post Elements */
+ article {
+  @apply bg-gray-500 max-w-prose opacity-90;
+  padding: .5em;
+  border-radius: .25em;
+ }
+ article p {
+  @apply py-1;
+  text-indent: .5em;
+ }
+
+ /* Nav Elements */
+ .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+ }
+ .header li {
+  display: inline;
+  opacity: 80%;
+  padding-right: 0.2rem;
+ }
+ .header h1 {
+  text-shadow: 0 0 2px #000000;
+  opacity: 80%;
+ }
+
+ /* Global */
+ body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .card {
+  flex: 1 1 10rem;
+  padding: 0.2rem;
+  margin: 0.5vw;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 8px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+ }
+
+ /* Resume Elements */
+ .CV {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  place-content: center;
+  margin: calc(2rem - 0.5vw);
+ }
+ .card > ul {
+  padding: 0.5rem;
+ }
+ .card > ul > li > a {
+  text-decoration: underline;
+  font-size: 0.85rem;
+  color: rgb(255, 197, 71);
+ }
+
+ /* Footer */
+ .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 0.25rem 0.25rem;
+  background: blue;
+  background-blend-mode: exclusion;
+  opacity: 0.5;
+  z-index: 0;
+  font-size: 0.85rem;
+  a {
+   text-decoration: underline;
+   margin: 0.25rem;
+  }
+  ul {
+   list-style: none;
+  }
+ }
+
+ /* Overlay Style & Animations */
+ .overlay {
+  min-width: 150%;
+  min-height: 150%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgb(255, 217, 0), red, blue);
+  background-size: 300% 300%;
+  animation: gradient 40s ease infinite;
+  z-index: -1;
+  filter: saturate(30%);
+ }
+
+ /* Background Animation */
+ @keyframes gradient {
+  20% {
+   background-position: 0% 50%;
+  }
+  50% {
+   background-position: 100% 50%;
+  }
+  80% {
+   background-position: 0% 50%;
+  }
+ }
+
+ /* Contact Success Page */
+ .contact-success {
+  padding: 1rem;
+ }
+
+ .contact-success-div {
+  margin: 10rem auto;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  opacity: 80%;
+ }
+}
