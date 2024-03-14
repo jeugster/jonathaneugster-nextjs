@@ -11,7 +11,7 @@ export default function Resume() {
      <li>HTML</li>
      <li>CSS</li>
      <li>JavaScript</li>
-     <li>English</li>
+     <li>MDX</li>
     </ul>
    </div>
    <div className="card">
@@ -19,10 +19,11 @@ export default function Resume() {
      <li>
       <h2>Tools</h2>
      </li>
-     <li>Strapi</li>
+     <li></li>
      <li>Nextjs</li>
      <li>Nodejs</li>
-     <li>GraphQL</li>
+     <li>TailwindCSS</li>
+     <li>Git</li>
      {/* <li>
                     <i className="fab fa-docker"></i> Docker
                 </li>
@@ -34,7 +35,7 @@ export default function Resume() {
    <div className="card">
     <ul>
      <li>
-      <h2>Interests</h2>
+      <h2>Principles</h2>
      </li>
      <li>Automation</li>
      <li>Resilience</li>
