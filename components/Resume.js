@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Resume() {
  return (
-  <div className="CV">
+  <div className="cardwrapper">
    <div className="card">
     <ul>
      <li>

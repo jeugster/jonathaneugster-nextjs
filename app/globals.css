@@ -23,9 +23,18 @@
 
  /* Post Elements */
  article {
-  @apply bg-white max-w-prose opacity-90;
-  padding: .5em;
-  border-radius: .25em;
+  @apply max-w-prose bg-opacity-95;
+  color: rgb(0, 0, 0) ;
+  flex: 1 1 10rem;
+  padding: 0.3rem;
+  margin: 0.5vw;
+  background: hsla(0, 0%, 100%, 0.70);
+  box-shadow: 0 8px 8px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  min-width: 32ch;
+  max-width: 64ch;
  }
  article p {
   @apply py-1;
@@ -56,6 +65,7 @@
   align-items: center;
  }
  .card {
+  color: rgb(0, 0, 0) ;
   flex: 1 1 10rem;
   padding: 0.3rem;
   margin: 0.5vw;
@@ -64,10 +74,12 @@
   backdrop-filter: blur(2px);
   border-radius: 10px;
   border: 1.5px solid rgba(255, 255, 255, 0.18);
+  min-width: 20ch;
+  max-width: 65ch;
  }
 
  /* Resume Elements */
- .CV {
+ .cardwrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -79,8 +91,8 @@
  }
  .card > ul > li > a {
   text-decoration: underline;
-  font-size: 0.85rem;
-  color: rgb(255, 197, 71);
+  font-size: 1rem;
+  color: rgb(48, 48, 47);
  }
 
  /* Footer */
