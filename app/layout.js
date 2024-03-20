@@ -2,10 +2,21 @@ import Nav from '@components/Nav'
 import Footer from '@components/Footer'
 import { Inter } from "next/font/google";
 import "./globals.css";
+// dynamic pattern https://nextjs.org/docs/app/api-reference/functions/generate-metadata
+//import { Metadata } from 'next'
+ 
+ export const metadata = {
+  title: 'Portfolio Site for Jonathan Eugster',
+}
+
+// dynamic pattern https://nextjs.org/docs/app/api-reference/functions/generate-metadata
+//export async function generateMetadata({ params }) {
+//  return {
+//   title: '...',
+// }
+//}
 
 const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {};
 
 export default function RootLayout({ children }) {
   return (
