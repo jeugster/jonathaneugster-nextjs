@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
 // Main footer component
-export default function Footer() {  
-  return (
+export default function Footer() {
+ return (
   <div className="footer">
    <ul className="flex flex-row">
     <li className="pr-1">
