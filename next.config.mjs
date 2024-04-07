@@ -9,15 +9,15 @@ const withMDX = createMDX({
   // as the package is ESM only
   // https://github.com/remarkjs/remark-gfm#install
   remarkPlugins: [],
-  //rehypePlugins: [],
+  rehypePlugins: [],
   // If you use `MDXProvider`, uncomment the following line.
-  // providerImportSource: "@mdx-js/react",
+  //providerImportSource: '@mdx-js/react',
  },
 })
 
 const nextConfig = {
  // Configure `pageExtensions` to include MDX files
- pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+ pageExtensions: ['js', 'jsx', 'mdx', 'md', 'ts', 'tsx'],
  // Optionally, add any other Next.js config below
  experimental: {
   mdxRs: true,

@@ -1,7 +1,8 @@
 import { readFileSync } from 'node:fs'
 import { readdirSync } from 'node:fs'
 import slugify from 'slugify'
-//import slugify
+
+const postroot = './jonathaneugster-logseq/posts/'
 
 //readFile('/etc/passwd', (err, data) => {
 //  if (err) throw err;
@@ -12,18 +13,17 @@ export function getPostsData() {
  var postsdata = []
 
  // Post File Names
- const postfilenames = readdirSync('./jonathaneugster-logseq/pages/')
+ const postfilenames = readdirSync(postroot)
  postsdata = postfilenames.map((filename) => ({ id: filename }))
 
  // Post File Addresses
- const postroot = './jonathaneugster-logseq/pages/'
  const postfileaddresses = postfilenames.map((filename) => postroot + filename)
  postsdata = postsdata.map((post) => ({
   ...post,
   addr: postfileaddresses[postsdata.indexOf(post)],
  }))
 
- // Post Contents
+ // Post Contents - if you want a draft subfolder under the posts folder make this function not include folders in the response
  const posts = postfileaddresses.map((fileaddr) =>
   readFileSync(fileaddr, 'utf8'),
  )
@@ -40,7 +40,7 @@ export function getPostsData() {
 }
 
 export function getPostsSlugs() {
- const postfilenames = readdirSync('./jonathaneugster-logseq/pages/')
+ const postfilenames = readdirSync(postroot)
  const regex = /\.mdx|\.md/
  // sanitize these slugs of unicode?
  const params = postfilenames.map((filename) => ({
@@ -50,7 +50,7 @@ export function getPostsSlugs() {
 }
 
 export function getSlugIndex(postslug) {
- const postfilenames = readdirSync('./jonathaneugster-logseq/pages/')
+ const postfilenames = readdirSync(postroot)
  const regex = /\.mdx|\.md/
  const slugs = postfilenames.map((filename) =>
   slugify(filename.replace(regex, '').toLowerCase()),
