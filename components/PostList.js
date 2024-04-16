@@ -1,8 +1,22 @@
 import Link from 'next/link'
 import ReactMarkdown from 'react-markdown'
+//import { readFileSync } from 'node:fs'
+import { readdirSync } from 'node:fs'
+import { postroot } from '@/app/posts/lib/postsdata' 
 
 // Returns posts
 export default function PostList(props) {
+
+  const postlist = function getPostsList() {
+   const postfilenames = readdirSync(postroot)
+   const regex = /\.mdx|\.md/
+   // sanitize these slugs of unicode? : Nope, just edit them out of the titles.
+   const posts = postfilenames.map((filename) => ({
+    post: filename.replace(regex, ''),
+   }))
+  }
+  console.log(postlist)
+
  return (
   <>
    {props.posts &&
