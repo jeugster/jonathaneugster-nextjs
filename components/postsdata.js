@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import { readdirSync } from 'node:fs'
 import slugify from 'slugify'
 
-export const postroot = '../jonathaneugster-graph/posts/'
+export const postroot = './jonathaneugster-graph/posts/'
 
 //readFile('/etc/passwd', (err, data) => {
 //  if (err) throw err;

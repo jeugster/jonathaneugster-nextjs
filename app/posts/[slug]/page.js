@@ -1,4 +1,8 @@
-import { getPostsData, getPostsSlugs, getSlugIndex } from '../lib/postsdata.js'
+import {
+ getPostsData,
+ getPostsSlugs,
+ getSlugIndex,
+} from '@/components/postsdata.js'
 import { mdxCompiler } from '@/components/MDXDecoder.js'
 
 //import { postsdata } from "../lib/postsdata"
