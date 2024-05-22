@@ -1,3 +1,6 @@
 [submodule "jonathaneugster-logseq"]
 	path = jonathaneugster-logseq
-	url = https://github.com/jeugster/jonathaneugster-logseq.git
+	url = https://github.com/jeugster/jonathaneugster-graph.git
+[submodule "jonathaneugster-graph"]
+	path = jonathaneugster-graph
+	url = https://github.com/jeugster/jonathaneugster-graph.git
