@@ -1,23 +1,29 @@
 {
-  "folders": [
-	{
-		"path": "."
-	},
-	{
-		"path": "../graph"
-	},
-	{
-		"path": "../je-haystack"
-	},
-	{
-		"path": "../je-crewai"
-	},
-	{
-		"path": "../keras"
-	},
-	{
-		"path": "../je-huginn"
-	}
-],
-  "settings": {}
+ "folders": [
+  {
+   "path": ".",
+  },
+  {
+   "path": "../graph",
+  },
+  {
+   "path": "../je-haystack",
+  },
+  {
+   "path": "../je-crewai",
+  },
+  {
+   "path": "../keras",
+  },
+  {
+   "path": "../je-huginn",
+  },
+  {
+   "path": "..",
+  },
+  {
+   "path": "../jonathaneugster-nextjs-main",
+  },
+ ],
+ "settings": {},
 }
