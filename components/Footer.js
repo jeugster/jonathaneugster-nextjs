@@ -6,7 +6,7 @@ export default function Footer() {
   <div className="footer">
    <ul className="flex flex-row">
     <li className="pr-1">
-     <Link href="https://github.com/jeugster/next-portfolio">Repo</Link>
+     <Link href="https://github.com/jeugster/jonathaneugster-nextjs">Repo</Link>
     </li>
    </ul>
   </div>
