@@ -156,6 +156,21 @@
   padding: 1rem;
  }
 
+ /* Form */
+ form {
+    @apply col-span-full flex-col align-middle justify-center;
+    @layer card;
+    input {
+        @apply p-1 m-1 w-full form-input text-black;
+    }
+    button {
+        @apply border p-2 m-1;
+    }
+    textarea {
+        @apply p-1 m-1 w-full form-input text-black; 
+    }
+ }
+
  /* Hero */
  .hero {
   margin: 10rem auto;
