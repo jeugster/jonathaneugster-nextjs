@@ -8,14 +8,14 @@ export default function Nav() {
     <h1 className="text-3xl font-bold">Jonathan Eugster</h1>
    </Link>
    <ul className="text-underline ">
-    <li>
+    {/* <li>
      <Link href="/posts" passHref>
       posts
      </Link>
-    </li>
+    </li> */}
     <li>
-     <Link href="/contact" passHref>
-      contact
+     <Link href="mailto:jonathan.eugster@gmail.com" passHref>
+      email
      </Link>
     </li>
     <li>
