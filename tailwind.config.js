@@ -8,10 +8,10 @@ module.exports = {
  options: {
   keyframes: true,
  },
- theme: {
-  ///extend: {
-  // backgroundImage: {},
-  //},
- },
+//  theme: {
+//   extend: {
+//    backgroundImage: {},
+//   },
+//  },
  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
 }
