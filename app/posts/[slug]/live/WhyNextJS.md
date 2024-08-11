@@ -3,7 +3,7 @@ aliases: []
 description:
 viewport: width=device-width, initial-scale=1
 tags: [article]
-title: Why NextJS
+title: WhyNextJS
 date created: Friday, March 15th 2024, 1:07:05 pm
 date modified: Saturday, April 13th 2024, 9:25:48 am
 ---

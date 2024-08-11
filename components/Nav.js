@@ -4,15 +4,15 @@ import Link from 'next/link'
 export default function Nav() {
  return (
   <div className="header m-4 mb-6">
-   <Link href="/" passHref legacyBehavior>
+   <Link href="/" passHref>
     <h1 className="text-3xl font-bold">Jonathan Eugster</h1>
    </Link>
    <ul className="text-underline ">
-    {/* <li>
+    <li>
      <Link href="/posts" passHref>
       posts
      </Link>
-    </li> */}
+    </li>
     <li>
      <Link href="mailto:jonathan.eugster@gmail.com" passHref>
       email

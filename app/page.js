@@ -1,12 +1,11 @@
-import Resume from '@components/Resume'
+import Resume from '@/components/Resume'
 import Posts from '@/components/ManualPosts'
 
 export default function Home() {
  return (
-  <div>
-       
-         <Resume />
-         <Posts />
+  <div className="">
+   <Resume />
+   <Posts />
   </div>
  )
 }
