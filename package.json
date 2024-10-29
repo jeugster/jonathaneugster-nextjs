@@ -11,7 +11,7 @@
  },
  "dependencies": {
   "@next/third-parties": "^15.0.0",
-  "next": "15.0.1",
+  "next": "15.0.2",
   "react": "^18",
   "react-dom": "^18",
   "rehype-sanitize": "^6.0.0",
@@ -29,7 +29,7 @@
   "@tailwindcss/typography": "^0.5.10",
   "autoprefixer": "^10.0.1",
   "eslint": "^8.0.0",
-  "eslint-config-next": "15.0.1",
+  "eslint-config-next": "15.0.2",
   "eslint-plugin-react": "^7.35.0",
   "globals": "^15.9.0",
   "postcss": "^8",
